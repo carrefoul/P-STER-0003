@@ -5,7 +5,7 @@ window.onload = () => {
         window.open(`../pages/detalle.html?id=${e.currentTarget.id}`, "_self");  
     };
 
-    fetch(`../assets/data/data.json`)
+    fetch(`assets/data/data.json`)
     .then(res => res.json())
     .then(data => {
         datos = data;
